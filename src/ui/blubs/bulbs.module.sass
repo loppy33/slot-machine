@@ -1,0 +1,59 @@
+.bulbs
+    position: absolute
+    top: 1%
+    left: 1%
+    width: 100%
+    height: 100%
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: repeat(4, 1fr)
+    gap: 7.65rem 5.8rem
+
+.bulb
+    background-color: #000
+    border-radius: 50%
+    width: 1rem
+    height: 1rem
+    position: relative
+
+    &::after
+        content: ''
+        border-radius: 50%
+        background-color: #f8f2df
+        width: .65rem
+        height: .65rem
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+@keyframes blink
+    0%
+        box-shadow: 0 0 5px #f8f2df
+        background-color: #f8f2df
+
+    25%
+        box-shadow: 0 0 10px #E54B4B
+        background-color: #E54B4B
+
+    50%
+        box-shadow: 0 0 15px #F4D06F
+        background-color: #F4D06F
+
+    75%
+        box-shadow: 0 0 10px #EA7AF4
+        background-color: #EA7AF4
+
+    100%
+        box-shadow: 0 0 5px #f8f2df
+        background-color: #f8f2df
+
+.blink:after
+    animation: blink .5s infinite
+
+// Четные лампочки будут иметь задержку 0s, нечетные - 0.5s
+.bulb:nth-child(even)
+    animation-delay: 0s
+
+.bulb:nth-child(odd)
+    animation-delay: 0.5s

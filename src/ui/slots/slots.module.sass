@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap')
+
+.wrapper
+  display: flex
+  height: fit-content
+  // width: 32.7rem
+  max-width: fit-content
+  flex: 1
+  flex-direction: column
+  // overflow: hidden
+  // border-radius: 0.75rem
+  // background: linear-gradient(to right, #d946ef, #06b6d4)
+
+.slots
+  // margin-left: 1rem
+  // margin-right: 1rem
+  // margin-top: 1rem
+  display: flex
+  height: 13rem
+  width: fit-content
+  gap: 1rem
+  overflow: hidden
+  background-color: #ddd
+  background: linear-gradient(0deg, rgba(117,117,117,1) 0%, rgba(255,255,255,1) 50%, rgba(117,117,117,1) 100%)
+  border: .5rem solid #292524
+  border-top: .3rem solid #292524
+  padding: 1rem
+  position: relative
+
+.messageBox
+  // margin-left: 1rem
+  // margin-right: 1rem
+  // margin-top: 1rem
+  background-color: #292524
+  border-radius: 50% 50% 0 0
+  background: radial-gradient(circle, #3a3736 10%, #141313 90%)
+
+.message
+  display: flex
+  min-height: 3rem
+  justify-content: center
+  align-items: center
+  gap: 1rem
+
+  border-radius: 50% 50% 0 0
+  border: 2px solid #ffbf00
+  margin: .5rem
+  padding: 1rem
+  text-align: center
+  color: #ffffff
+
+  font-family: "Great Vibes", cursive
+  font-weight: 600
+  letter-spacing: .2rem
+  font-size: 2em
+
+  /** TEXT GRADIENT */ 
+  color: #e8ce66
+  background-image: -webkit-linear-gradient(225deg, #e8ce66 42%, #f2de8f 72%, #e8ce66 61%)
+  background-clip: text
+  -webkit-background-clip: text
+  text-fill-color: transparent
+  -webkit-text-fill-color: transparent
+
+.decorContainer
+  background-color: #312d2c
+  background: radial-gradient(circle, #464241 10%, #353130 70%)
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-evenly
+
+.decor
+  height: 5.5rem
+  display: flex
+  align-items: center
+  flex-direction: column
+  p
+    padding-bottom: .25rem
+    text-align: center
+    font-size: 1.5rem
+    font-family: "Great Vibes", cursive
+    font-weight: 600
+    letter-spacing: .25rem
+    word-spacing: .5rem
+
+    /** TEXT GRADIENT */ 
+    color: #e8ce66
+    background-image: -webkit-linear-gradient(225deg, #e8ce66 42%, #f2de8f 72%, #e8ce66 61%)
+    background-clip: text
+    -webkit-background-clip: text
+    text-fill-color: transparent
+    -webkit-text-fill-color: transparent
+.hole
+  z-index: 2
+  width: 100%
+  height: 50%
+  border-radius: .25rem
+  background: linear-gradient(330deg, rgba(117,117,117,1) 0%, rgba(255,255,255,1) 50%, rgba(117,117,117,1) 100%)
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  box-shadow: 0 1rem 2rem -0.5rem rgba(0, 0, 0, 0.5)
+
+  &:after
+    content: ''
+    background-color: #0000009f
+    width: 95%
+    height: 80%
+    position: absolute
+
+.machine
+  background: linear-gradient(180deg, rgba(41,37,36,1) 0%, rgba(69,64,62,1) 50%, rgba(41,37,36,1) 100%)
+  padding: 1.5rem
+  border-radius: 0 0 .25rem .25rem
+  position: relative
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px
+
+.banner
+  // box-sizing: border-box
+  border: 10px solid #2a2625
+
+  max-width: 30rem
+  height: 100%
+  background: linear-gradient(330deg, rgba(117,117,117,1) 0%, rgba(255,255,255,1) 50%, rgba(117,117,117,1) 100%)
+  display: flex
+  justify-content: center
+  align-items: center
+  overflow: hidden
+
+.fruits
+  max-width: fit-content
+  width: 100%
+  display: flex
+  justify-content: space-between
+  gap: 33px
